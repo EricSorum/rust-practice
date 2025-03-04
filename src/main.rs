@@ -27,11 +27,14 @@ fn looping() {
 
 fn for_loop() {
   let arr = [10, 20, 30, 40, 50];
-  let mut i = 0;
+  // let mut i = 0;
 
-  while i < 5 {
-    println!("The value is: {}", arr[i]);
+  // while i < 5 {
+  //   println!("The value is: {}", arr[i]);
 
-    i += 1;
-  }
+  //   i += 1;
+  // }
+  for element in arr {
+    println!("The value is: {}", element);
+ }
 }
