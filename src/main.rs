@@ -1,10 +1,38 @@
+
+struct Rectangle {
+  width: u32,
+  height: u32,
+}
+
 fn main() {
+
+  let rect1 = Rectangle {
+    width: 30,
+    height: 50
+  };
+  fn rectangle_function(rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height
+  }
+
+  println!("The area of the rectangle is {} square pixels.", rectangle_function(&rect1));
+
+
+
+
+
+  let boo = false;
+  if boo {
     println!("Hello, world!");
     // second_function();
     // params(5, 'h');
     looping();
     for_loop();
+  }
 }
+
+
+// Rectangle program
+
 
 // fn second_function() {
 //   let x = "Some string";
