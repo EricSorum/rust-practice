@@ -1,4 +1,5 @@
 
+#[derive(Debug)]
 struct Rectangle {
   width: u32,
   height: u32,
@@ -10,6 +11,10 @@ fn main() {
     width: 30,
     height: 50
   };
+
+  // use debug for rect1
+  println!("Debug the struct: {:?}", rect1);
+
   fn rectangle_function(rectangle: &Rectangle) -> u32 {
     rectangle.width * rectangle.height
   }
